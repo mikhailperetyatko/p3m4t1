@@ -1,0 +1,17 @@
+{
+    "name": "mihanya/p3m4t1",
+    "authors": [
+        {
+            "name": "Mikhail Peretyatko",
+            "email": "mihanya@list.ru"
+        }
+    ],
+    "require": {
+        "symfony/console": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
