@@ -6,4 +6,6 @@ $app = new \Symfony\Component\Console\Application('Console commands');
 
 $app->add(new \App\CommandFirst());
 
+$app->add(new \App\CommandSecond());
+
 $app->run();
