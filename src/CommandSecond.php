@@ -30,13 +30,13 @@ class CommandSecond extends Command
             );
     }
 
-    protected function print_message(string $text, $iterations = 2)
+    protected function printMessage(string $text, int $iterations = 2)
     {
         return str_repeat($text, (is_null($iterations) || $iterations < 1 ? self::ITERATIONS : $iterations));
     }
     
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln($this->print_message($input->getArgument('text'), $input->getOption('iterations')));
+        $output->writeln($this->printMessage($input->getArgument('text'), (int)$input->getOption('iterations')));
     }
 }
