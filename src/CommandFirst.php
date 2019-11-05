@@ -22,13 +22,13 @@ class CommandFirst extends Command
             ->addArgument('text', InputArgument::REQUIRED, '');
     }
 
-    protected function say_hello(string $text)
+    protected function sayHello(string $text)
     {
         return 'Привет, ' . $text;
     }
     
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln($this->say_hello($input->getArgument('text')));
+        $output->writeln($this->sayHello($input->getArgument('text')));
     }
 }
